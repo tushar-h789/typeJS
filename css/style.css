@@ -1,0 +1,29 @@
+body {
+  background-color: rgb(42, 11, 11);
+  color: #fff;
+}
+
+.type {
+  position: relative;
+  display: inline-block;
+}
+
+.type:after {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  background: #fff;
+  width: 2px;
+  height: 100%;
+  content: "";
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
